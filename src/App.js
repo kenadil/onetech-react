@@ -1,24 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./index";
+import Phonebook from "./Phonebook";
 
 function App() {
+  const users = [
+    { "name": "Alex", "phone": "1234584" },
+    { "name": "Jack", "phone": "6846846" },
+    { "name": "Arman", "phone": "7984849" },
+    { "name": "Fedor", "phone": "1234584" },
+    { "name": "Lebron", "phone": "6846846" },
+    { "name": "Messi", "phone": "7984849" },
+  ];
+
+  const [searchTerm, setSearchTerm] = React.useState("");
+  const [searchResults, setSearchResults] = React.useState([]);
+
+  React.useEffect(() => {
+    const results = users.filter(user => 
+      user.name.toLowerCase().includes(searchTerm)
+    );
+    setSearchResults(results);
+  }, [searchTerm]);
+
+  const filter = event => {
+    setSearchTerm(event.target.value);
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <form>
+        <input type="text" name="name" placeholder="Search Contacts" onChange={filter}/>
+      </form>
+      {searchResults.map(i => (
+        <Phonebook value={i}/>
+      ))}
     </div>
   );
 }
