@@ -1,7 +1,6 @@
 import React from "react";
 
 const Phonebook = props => {
-    console.log(props.value);
     return (
         <div className="row">
             <div class="round-container"/>
