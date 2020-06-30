@@ -1,7 +1,7 @@
 import React from 'react';
 import "./index";
 import 'antd/dist/antd.css';
-import NotePage from './NoteApp/NotePage';
+import NotePage from './NoteApp/components/NotePage';
 
 
 function App() {

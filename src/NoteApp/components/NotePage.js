@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
-import InputContainer from "../Phonebook/InputContainer";
+import InputContainer from "../../Phonebook/InputContainer";
 import { Button } from "antd";
 import CardsField from "./CardsField";
 import TextNote from "./TextNote";
-
-const url = "https://jsonplaceholder.typicode.com/posts";
+import url from "../services/api";
 
 let style = {
     position: "relative", width: "540px", borderRadius: "10px",
