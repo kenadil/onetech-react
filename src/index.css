@@ -49,25 +49,11 @@ input.error {
 .message-container {
   color: green;
   position: relative;
-  left: 519px;
+  left: 10px;
 }
 
 .error-container {
   color: red;
   position: relative;
-  left: 519px;
-}
-
-@media only screen and (max-width: 600px) {
-  .message-container {
-    color: green;
-    position: relative;
-    left: 10px;
-  }
-  
-  .error-container {
-    color: red;
-    position: relative;
-    left: 10px;
-  }
+  left: 10px;
 }
