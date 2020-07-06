@@ -49,11 +49,11 @@ input.error {
 .message-container {
   color: green;
   position: relative;
-  left: 10px;
+  left: 60px;
 }
 
 .error-container {
   color: red;
   position: relative;
-  left: 10px;
+  left: 60px;
 }
