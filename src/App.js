@@ -1,7 +1,7 @@
 import React from 'react';
 import MainPage from './components/MainPage/MainPage';
 import 'antd/dist/antd.css';
-import "./index.css";
+import "./styles/form-container.css";
 
 function App() {
   return (

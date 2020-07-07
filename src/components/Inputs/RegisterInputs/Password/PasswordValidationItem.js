@@ -19,6 +19,7 @@ const PasswordValidationItem = ({ handleChange, handleBlur, touched, errors }) =
                 placeholder="Confirm your password"
                 onChange={handleChange}
                 onBlur={handleBlur}
+                visibilityToggle={false}
             />
             {errors.passwordvalidation && touched.passwordvalidation && (
                 <ErrorMessage message={errors.passwordvalidation}/>
