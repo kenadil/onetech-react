@@ -1,0 +1,19 @@
+.MainPage {
+    padding: 2.4rem;
+    position: relative;
+    margin: 3% auto auto auto;
+    width: 450px;
+}
+
+.row-container {
+    display: flex;
+    align-item: center;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+.row-container > div {
+    margin: 0 50px;
+}
