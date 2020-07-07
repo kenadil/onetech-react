@@ -15,7 +15,7 @@ const RegisterForm = ({ handleChange, handleBlur, values, touched, errors, handl
     }
     return (
         <div className="RegisterForm">
-            <h1 className="header">Register</h1>
+            <h1 className="header">Registration</h1>
             <form
                 onSubmit={handleSubmit}
             >
