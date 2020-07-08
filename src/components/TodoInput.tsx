@@ -1,10 +1,7 @@
 import React from "react";
+import { ITodoInputProps } from "../services/interfaces/TodoInputProps";
 
-export interface IAddTodoButtonProps {
-    onSubmit: (s: string) => void;
-  }
-
-export const TodoInput: React.FC<IAddTodoButtonProps> = ({onSubmit}) => {
+export const TodoInput: React.FC<ITodoInputProps> = ({onSubmit}) => {
     const [input, setInput] = React.useState("");
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {

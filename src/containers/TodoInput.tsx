@@ -2,7 +2,8 @@ import { connect } from "react-redux";
 import { Dispatch } from "redux";
 import { Todos } from "../services/state/todoState";
 import { TodoAction, addTodo } from "../services/action";
-import { IAddTodoButtonProps, TodoInput } from "../components/TodoInput";
+import { TodoInput } from "../components/TodoInput";
+import { ITodoInputProps } from "../services/interfaces/TodoInputProps";
 
 const mapStateToProps = (state: Todos): {} => {
   return {};
@@ -10,7 +11,7 @@ const mapStateToProps = (state: Todos): {} => {
 
 const mapDispatchToProps = (
   dispatch: Dispatch<TodoAction>
-): IAddTodoButtonProps => {
+): ITodoInputProps => {
   return {
     onSubmit: (s: string) => {
       dispatch(addTodo(s));

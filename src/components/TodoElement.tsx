@@ -1,15 +1,10 @@
 import React from "react";
 import "./Todo.css";
-
-interface ITodoElementProps {
-    completed: boolean;
-    text: string;
-    onClick: () => void;
-}
+import { ITodoElementProps } from "../services/interfaces/TodoElementProps";
 
 export const TodoElement: React.FC<ITodoElementProps> = ({completed, text, onClick}) => {
     return (
-        <li 
+        <li
             onClick={ onClick }
             className={completed ? "completed" : undefined}
         >

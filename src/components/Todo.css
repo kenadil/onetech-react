@@ -1,3 +1,17 @@
 .completed {
     text-decoration: line-through;
 }
+
+ul {
+    position: relative;
+    left: 10%;
+}
+
+ul > li {
+    width: 10%;
+    margin-bottom: 10px;
+}
+
+ul > p {
+    white-space: pre;
+}
