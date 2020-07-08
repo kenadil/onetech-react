@@ -1,11 +1,11 @@
-import React from 'react';
-import './App.css';
-import MainPage from './Pages/MainPage/MainPage';
+import React from "react";
+import "./App.css";
+import TodoPage from "./pages/TodoPage";
 
-function App() {
+const App = (): JSX.Element => {
   return (
     <div className="App">
-        <MainPage/>
+      <TodoPage />
     </div>
   );
 }
