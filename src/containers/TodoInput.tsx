@@ -1,9 +1,10 @@
 import { connect } from "react-redux";
 import { Dispatch } from "redux";
 import { Todos } from "../services/state/todoState";
-import { TodoAction, addTodo } from "../services/action";
 import { TodoInput } from "../components/TodoInput";
 import { ITodoInputProps } from "../services/interfaces/TodoInputProps";
+import { TodoAction } from "../services/types/TodoAction";
+import { addTodo } from "../services/action";
 
 const mapStateToProps = (state: Todos): {} => {
   return {};

@@ -1,5 +1,6 @@
 import { Todos } from "../state/todoState";
-import { TodoAction, TodoActionType } from "../action";
+import { TodoActionType } from "../action";
+import { TodoAction } from "../types/TodoAction";
 export const todos = (state:Todos = [], action: TodoAction): Todos => {
   switch (action.type) {
     case TodoActionType.ADD_TODO:
